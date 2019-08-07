@@ -13,7 +13,7 @@ namespace ExampleSimpleWebserver
 
         }
     }
-    class Listener
+    public class Listener
     {
         HttpListener httpListener = new HttpListener();
     }
