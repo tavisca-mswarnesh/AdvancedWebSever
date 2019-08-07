@@ -1,6 +1,5 @@
 ﻿using System.Collections;
-using System.Net;
-using System.Threading;
+using System.Collections.Generic;
 
 namespace ExampleSimpleWebserver
 {
@@ -13,8 +12,5 @@ namespace ExampleSimpleWebserver
 
         }
     }
-    public class Listener
-    {
-        HttpListener httpListener = new HttpListener();
-    }
+
 }
