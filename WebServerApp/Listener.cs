@@ -19,7 +19,7 @@ namespace ExampleSimpleWebserver
             var domainPathDictionary = _domainLookUp.GetDomainPathDictionary();
             foreach (var prefix in domainPathDictionary.Keys)
             {
-                httpListener.Prefixes.Add(prefix);
+                httpListener.Prefixes.Add("http://"+prefix+"/");
             }
         }
 
