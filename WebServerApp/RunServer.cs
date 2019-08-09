@@ -13,6 +13,7 @@
             Listener listener = new Listener(contextQueue, domainLookUp);
             listener.AddPrefix();
             listener.Start();
+            
             Dispatcher dispatcher = new Dispatcher(domainLookUp, contextQueue);
             dispatcher.Start();
         }

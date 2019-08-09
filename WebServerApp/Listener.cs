@@ -31,9 +31,12 @@ namespace ExampleSimpleWebserver
                 var context = httpListener.GetContext();
                 if (context!=null)
                 {
-                    Console.WriteLine("Received " + context.Request.RawUrl);
+                    Console.WriteLine(context.Request.RawUrl);
                     _contextQueue.Enqueue(context);
                 }
+                //httpListener = new HttpListener();
+                //AddPrefix();
+                //httpListener.Start();
                 
             }
         }

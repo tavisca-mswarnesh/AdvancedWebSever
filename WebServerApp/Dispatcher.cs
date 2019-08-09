@@ -25,7 +25,7 @@ namespace ExampleSimpleWebserver
                         var domainName = context.Request.Url.Authority;
                         var fileName = context.Request.RawUrl;
                         fileName = fileName.Remove(0, 1);
-                        if (fileName!="favicon.ico")
+                        if (fileName != "favicon.ico")
                         {
                             var domainPath = _domainLookUp.GetDomainPath(domainName);
                             byte[] buffer = fileHandler.ConvertFileTOStream(domainPath + fileName);
@@ -34,6 +34,7 @@ namespace ExampleSimpleWebserver
                             System.IO.Stream output = context.Response.OutputStream;
                             output.Write(buffer, 0, buffer.Length);
                             output.Close();
+                            
                         }
                         
                     }
