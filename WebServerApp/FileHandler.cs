@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace ExampleSimpleWebserver
+namespace SimpleWebserver
 {
     class FileHandler: IFileHandler
     {
@@ -14,6 +14,7 @@ namespace ExampleSimpleWebserver
             
             return fileStream;
         }
+        
         public byte[] ConvertFileTOStream(string filePath)
         {
             byte[] buffer;
@@ -23,7 +24,7 @@ namespace ExampleSimpleWebserver
                 FileStream fileStream = GetFileStream(filePath);
                 fileStream.Read(buffer, 0, Convert.ToInt32(fileStream.Length));
             }
-            catch (FileNotFoundException e)
+            catch 
             {
 
                 string page= "<html><body>404 Not Found</body></html>";

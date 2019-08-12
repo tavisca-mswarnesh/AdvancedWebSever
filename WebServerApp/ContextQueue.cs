@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Net;
 
-namespace ExampleSimpleWebserver
+namespace SimpleWebserver
 {
     public class ContextQueue
     {

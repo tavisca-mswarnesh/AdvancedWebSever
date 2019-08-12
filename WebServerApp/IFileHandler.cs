@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ExampleSimpleWebserver
+namespace SimpleWebserver
 {
     public interface IFileHandler
     {
